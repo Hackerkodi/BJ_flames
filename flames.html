@@ -45,14 +45,18 @@
       var res=document.getElementById("output");
       var a=document.getElementById("name1").value.toLowerCase();
       var b=document.getElementById("name2").value.toLowerCase();
+      
       if(a.length+b.length==18){
                     document.getElementById("per").innerHTML=100+"%";
                 }
                 else if(a.length+b.length==10){
                   document.getElementById("per").innerHTML=100+"%";
                 }
+                else if(a.length+b.length==22){
+                   document.getElementById('per').innerHTML=Math.floor(Math.random()*(100-90))+90+"%";
+                }
                 else{
-                   document.getElementById('per').innerHTML=Math.floor(Math.random()*(100-1))+1+"%";
+                   document.getElementById('per').innerHTML=Math.floor(Math.random()*(100-50))+50+"%";
                 }
 
       if(a!=""&&b!=""){
